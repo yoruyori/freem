@@ -1,0 +1,100 @@
+// .sbros{
+//     padding-bottom: 0;
+// }
+.particular {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.particular-item{
+    width: 100%;
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 30px) / 2);
+    }
+    @media screen and (min-width: 1200px) {
+       width: 270px;
+    }
+    }    
+
+.particular-item__title {
+    text-align: center;
+    color: #212121;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    @media screen and (min-width: 1200px) {
+        text-align: left;    
+    }  
+}
+
+.particular-item__text {
+    color: var(--primary-text-color);
+    font-size: 14px;
+    line-height: 1.71;
+    width: 100%;
+    margin: 0px;
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+        
+    }
+}
+
+.particular-item::before {
+    display: block;
+    content: "";
+    height: 120px;
+    background-color: var(--third-bg-color);
+    background-size: 70px 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+
+.particular-item:nth-child(1)::before {
+    background-image: url(../images/antenna.svg);
+    background-color: #F5F4FA;
+    // width: 270px;
+    width: 100%;
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+    }
+    
+
+}
+.particular-item:nth-child(2)::before {
+    background-image: url(../images/clock.svg);
+    background-color: #F5F4FA;
+    // width: 270px;
+    width: 100%;
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+    }
+}
+.particular-item:nth-child(3)::before {
+    background-image: url(../images/diagram.svg);
+    background-color: #F5F4FA;
+    // width: 270px;
+    width: 100%;
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+    }
+}
+.particular-item:nth-child(4)::before {
+    background-image: url(../images/astronaut.svg);
+    background-color: #F5F4FA;
+    // width: 270px;
+    width: 100%;
+    @media screen and (min-width: 1200px) {
+        width: 270px;;
+    }
+}
+
+.invisible{
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}

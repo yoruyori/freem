@@ -1,0 +1,104 @@
+.team-list{
+    flex-wrap: wrap;
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.team{
+    background-color: #F5F4FA;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--background-color-team);
+}
+
+.team-title{
+    text-align: center;
+    font-weight: 700;
+    // font-size: 36px;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: var(--title-color);
+    @media screen and (min-width: 1200px) {
+        font-size: 36px;
+    }
+}
+
+
+.name-developer{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color:var(--title-color);
+    text-align: center;
+    margin-top: 30px; 
+}
+
+
+.professions {
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color:var(--primary-color-text);
+    text-align: center;
+    margin-top: 10px;
+}
+
+.developer-pic{
+    background-color: var(--whrite);
+    // width: 270px;
+    width: 100%;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px
+    rgba(0, 0, 0, 0.14), 0px 2px 1px 
+    rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    padding-bottom: 30px;
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 30px) / 2);
+    }
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+    }
+}
+.team-soc-item {
+    width: 44px;
+    height: 44px;
+}
+.team-soc-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 16px;
+    gap: 10px;
+}
+
+.team-soc-link{
+    background-color: #ffffff;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    transition: background-color var(--one-time) var(--two-time) ;
+    &:hover{
+        background-color: #2196F3;
+    }
+}
+
+.team-soc-icon{
+    fill: #AFB1B8;
+    transition: fill var(--one-time) var(--two-time) ;
+    .team-soc-link:hover &{
+        fill: #FFFFFF;
+    }
+}
+
+.developer-img{
+    width: 100%;
+}
